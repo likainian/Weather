@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="weather_launcher_title">天气</string>
+    <string name="weather_add_city">添加城市</string>
+    <string name="weather_search_city">搜索城市</string>
+    <string name="weather_city_search_back">返回</string>
+    <string name="weather_city_search_hint">城市名或邮政编码</string>
+    <string name="weather_city_search_submit">搜索</string>
+    <string name="weather_city_query_too_short">请输入至少两个字符</string>
+    <string name="weather_city_search_loading">搜索中…</string>
+    <string name="weather_city_search_failed">搜索失败，请重试</string>
+    <string name="weather_city_search_empty">未找到匹配城市</string>
+    <string name="weather_save_city_failed">保存城市失败，请重试</string>
+    <string name="weather_status_cities_failed">读取城市失败 · 下拉重试</string>
+    <string name="weather_status_updating">更新中…</string>
+    <string name="weather_status_cached_update_failed">更新失败 · 缓存 %1$s · 下拉重试</string>
+    <string name="weather_status_load_failed">天气加载失败 · 下拉重试</string>
+    <string name="weather_status_updated_at">更新于 %1$s</string>
+    <string name="weather_status_reading_cache_and_locating">正在读取缓存并定位…</string>
+    <string name="weather_status_reading_cache">正在读取缓存…</string>
+</resources>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.Weather" parent="Theme.MaterialComponents.NoActionBar">
+        <item name="colorPrimary">@color/weather_primary</item>
+        <item name="colorPrimaryVariant">@color/weather_background</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSecondary">@color/weather_accent</item>
+        <item name="colorSecondaryVariant">@color/weather_accent</item>
+        <item name="colorOnSecondary">@color/weather_background</item>
+        <item name="colorSurface">@color/weather_primary</item>
+        <item name="colorOnSurface">@color/white</item>
+        <item name="android:colorBackground">@color/weather_primary</item>
+        <item name="colorOnBackground">@color/white</item>
+        <item name="android:statusBarColor">@color/weather_primary</item>
+        <item name="android:navigationBarColor">@color/weather_background</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:fitsSystemWindows">true</item>
+    </style>
+</resources>

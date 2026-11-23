@@ -1,0 +1,28 @@
+概述
+開發一個天氣應用程式，讓使用者能夠搜尋地點並查看天氣資訊。你可以使用任何公開的天氣 API。
+預計完成時間：4–6 小時
+
+需求
+搜尋地點
+查看目前天氣狀況
+查看天氣預報資訊
+妥善處理載入中（Loading）及錯誤（Error）狀態
+技術要求
+實作內容應能展現你在以下方面的設計與思考：
+應用程式架構（Application Architecture）
+元件設計（Component Design）
+狀態管理（State Management）
+API 整合（API Integration）
+程式碼組織（Code Organization）
+錯誤處理（Error Handling）
+可維護性（Maintainability）
+Web：React、Next.js、Angular、Vue
+Mobile：Swift、Kotlin 或 Flutter
+交付內容
+原始碼（Source Code）
+README 文件
+備註
+請控制實作範圍在合理程度。
+本題沒有唯一正確答案。
+請著重於乾淨、易維護的程式碼以及合理的工程決策。
+相較於功能是否完整，我們更重視你的思考過程以及設計取捨（Trade-offs）。

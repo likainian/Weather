@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <com.wallet.weather.widget.WeatherSwipeRefreshLayout
+        android:id="@+id/weather_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/weather_content"
+            android:paddingHorizontal="@dimen/dp_15"
+            android:background="@drawable/weather_background"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/city_title"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/weather_launcher_title"
+                    android:textColor="@color/white"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/add_city"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:contentDescription="@string/weather_add_city"
+                    android:gravity="center"
+                    android:text="＋"
+                    android:textColor="@color/white"
+                    android:textSize="29sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/weather_status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:minHeight="44dp"
+                android:textColor="@color/weather_text_secondary"
+                android:textSize="14sp" />
+
+            <com.wallet.weather.widget.CityDots
+                android:id="@+id/city_dots"
+                android:layout_width="wrap_content"
+                android:layout_height="22dp" />
+
+            <androidx.viewpager2.widget.ViewPager2
+                android:id="@+id/weather_pager"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+    </com.wallet.weather.widget.WeatherSwipeRefreshLayout>
+</layout>

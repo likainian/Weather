@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/weather_background"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_marginHorizontal="@dimen/dp_15"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:gravity="center_vertical">
+
+            <EditText
+                android:id="@+id/city_query"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="@string/weather_city_search_hint"
+                android:paddingHorizontal="@dimen/dp_10"
+                android:background="@color/weather_panel"
+                android:imeOptions="actionSearch"
+                android:inputType="text"
+                android:minHeight="48dp"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:textColorHint="@color/weather_text_secondary" />
+
+            <Button
+                android:id="@+id/city_search_submit"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:text="@string/weather_city_search_submit"
+                android:textColor="@color/weather_accent" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/city_search_status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:accessibilityLiveRegion="polite"
+            android:paddingTop="16dp"
+            android:layout_marginHorizontal="@dimen/dp_15"
+            android:textColor="@color/weather_text_secondary"
+            android:visibility="gone" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/city_results"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginHorizontal="@dimen/dp_15"
+            android:layout_marginTop="12dp"
+            android:layout_weight="1"
+            android:visibility="gone" />
+    </LinearLayout>
+</layout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="weather_primary">#184261</color>
+    <color name="weather_background">#091A2C</color>
+    <color name="weather_text_secondary">#B7DAEB</color>
+    <color name="weather_accent">#7BE6FF</color>
+    <color name="weather_dot_inactive">#7995A9</color>
+    <color name="weather_panel">#90335773</color>
+    <color name="weather_day_today">#553C92AE</color>
+    <color name="weather_day_default">#193E7C9E</color>
+    <color name="white">#FFFFFFFF</color>
+</resources>

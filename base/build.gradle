@@ -1,0 +1,87 @@
+plugins {
+    id 'com.android.library'
+    id 'kotlin-android'
+    id "com.google.devtools.ksp"
+}
+
+android {
+    namespace = "io.iotex.base"
+    compileSdkVersion 36
+
+    buildFeatures {
+        buildConfig true
+    }
+
+    defaultConfig {
+        minSdkVersion 24
+        targetSdkVersion 35
+        versionCode 1
+        versionName version
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+
+    buildTypes {
+        debug {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    kotlinOptions {
+        jvmTarget = "1.8"
+    }
+    dataBinding {
+        enabled = true
+    }
+}
+
+dependencies {
+
+    api 'androidx.core:core-ktx:1.12.0'
+    api 'androidx.appcompat:appcompat:1.6.1'
+    api 'com.google.android.material:material:1.9.0'
+
+    api 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.4.0'
+    api 'androidx.lifecycle:lifecycle-livedata-ktx:2.4.0'
+    api 'androidx.lifecycle:lifecycle-runtime-ktx:2.4.0'
+    api 'androidx.lifecycle:lifecycle-common-java8:2.4.0'
+
+    //RoundedImageView  https://github.com/vinc3m1/RoundedImageView
+    api 'com.makeramen:roundedimageview:2.3.0'
+
+    api "com.squareup.okhttp3:okhttp:4.9.0"
+    api "com.squareup.okhttp3:logging-interceptor:4.9.0"
+
+    api 'com.squareup.retrofit2:retrofit:2.11.0'
+    api ('com.squareup.retrofit2:converter-gson:2.11.0') {
+        exclude group: 'com.google.code.gson'
+    }
+    api 'com.squareup.retrofit2:adapter-rxjava2:2.11.0'
+
+    //android utils
+    api ('com.blankj:utilcodex:1.31.0') {
+        exclude group: 'com.google.code.gson'
+    }
+
+    api 'com.google.code.gson:gson:2.11.0'
+
+    //eventbus
+    api 'org.greenrobot:eventbus:3.1.1'
+
+    api 'com.airbnb.android:lottie:6.1.0'
+
+    //imageloader
+    api "com.github.bumptech.glide:glide:4.14.2"
+    ksp 'com.github.bumptech.glide:ksp:4.14.2'
+    api 'jp.wasabeef:glide-transformations:4.3.0'
+}
