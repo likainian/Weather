@@ -1,4 +1,11 @@
-基于考题做以下：
+## 项目结构
+app天气功能。
+base模块一些基础公用模块。
+[apk下载地址](https://github.com/likainian/Weather/blob/master/app/release/app-release.apk)
+
+<img width="1200" height="2664" alt="74b520de132830d08fec3412546464b" src="https://github.com/user-attachments/assets/6db4f6bb-9c23-473d-a227-f8650566fa84" />
+
+## 基于考题做以下：
 1，找下免费的api和参考下github天气的实现。
 2，设计天气主页面UI，整体内容上边是地址切换，接下来有一段是今天的天气，在下面一段是15天的天气。
 3，当用户左右滑动时，地址切换，下面整体是viewpage切换。
@@ -40,7 +47,3 @@
 - [Open-Meteo 地名搜索 API](https://open-meteo.com/en/docs/geocoding-api)
 - [Open-Meteo 使用条件](https://open-meteo.com/en/pricing)
 - [Breezy Weather 的天气数据源说明](https://github.com/breezy-weather/breezy-weather/blob/main/docs/SOURCES.md)
-- 
-[apk下载地址](https://github.com/likainian/Weather/blob/master/app/release/app-release.apk)
-
-<img width="1200" height="2664" alt="74b520de132830d08fec3412546464b" src="https://github.com/user-attachments/assets/6db4f6bb-9c23-473d-a227-f8650566fa84" />
